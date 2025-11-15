@@ -76,6 +76,7 @@ input { padding: 8px; border: 1px solid #aaa; border-radius: 5px; }
     gap: 40px;
     width: 100%;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .btn-card {
