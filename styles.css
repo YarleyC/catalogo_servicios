@@ -66,12 +66,15 @@ button {
 }
 input { padding: 8px; border: 1px solid #aaa; border-radius: 5px; }
 
+
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 40px !important;
+    width: 100% !important;
     margin-top: 30px;
-    flex-wrap: nowrap;  /* Para que NO se vayan hacia abajo */
 }
 
 .btn-card {
@@ -91,23 +94,13 @@ input { padding: 8px; border: 1px solid #aaa; border-radius: 5px; }
     align-items: center;
 }
 
-.btn-card:hover {
-    transform: scale(1.05);
-    border-color: #6C63FF;
-}
+
 
 .btn-icon {
     width: 60px;
     height: auto;
     margin-bottom: 15px;
 }
-
-.btn-card p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-}
-
 
 
 
