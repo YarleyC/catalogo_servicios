@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Servicios</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Servicios</h1>
+
+        <div class="buttons">
+            <a href="#" onclick="mostrar('prestamo')" class="btn">Solicitud de Préstamo</a>
+            <a href="#" onclick="mostrar('consulta')" class="btn">Consulta de Crédito</a>
+            <a href="#" onclick="mostrar('actualizar')" class="btn">Actualizar Datos</a>
+        </div>
+
+        <div id="prestamo" class="section oculto">
+            <h2>Solicitud de Préstamo</h2>
+            <label>Monto:</label>
+            <input type="number" id="monto" placeholder="Ingrese monto" />
+
+            <label>Plazo (meses):</label>
+            <input type="number" id="plazo" placeholder="Ingrese plazo" />
+
+            <button onclick="solicitarPrestamo()">Solicitar</button>
+            <p id="respPrestamo"></p>
+        </div>
+
+        <div id="consulta" class="section oculto">
+            <h2>Consulta de Crédito</h2>
+            <label>Número de Cliente:</label>
+            <input type="text" id="cliente" placeholder="Ingrese número de cliente" />
+
+            <label>Identificación:</label>
+            <input type="text" id="cc" placeholder="Ingrese identificación" />
+
+            <button onclick="consultarCredito()">Consultar</button>
+            <p id="respConsulta"></p>
+        </div>
+
+        <div id="actualizar" class="section oculto">
+            <h2>Actualizar Datos</h2>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nuevo nombre" />
+
+            <label>Correo:</label>
+            <input type="email" id="correo" placeholder="Nuevo correo" />
+
+            <label>Teléfono:</label>
+            <input type="text" id="telefono" placeholder="Nuevo teléfono" />
+
+            <button onclick="actualizarDatos()">Actualizar</button>
+            <p id="respActualizar"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
