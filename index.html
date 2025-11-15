@@ -11,42 +11,45 @@
 
         <header class="navbar">
             <nav class="nav-menu">
-                <a href="#" class="nav-item active">Inicio</a>
-                <a href="#" class="nav-item">Catalogo</a>
-                <a href="#" class="nav-item">Contacto</a>
+                <a href="#inicio" class="nav-item active">Inicio</a>
+                <a href="#catalogo" class="nav-item">Catalogo</a>
+                <a href="#contacto" class="nav-item">Contacto</a>
             </nav>
         </header>
-        
-        <h1>Catálogo de Servicios</h1>
 
-        <div class="buttons">
+        <section id="inicio">
+            <h1>Catálogo de Servicios</h1>
+        </section>
+
+        <section id="catalogo">
+            <div class="buttons">
+                <div class="btn-card" onclick="mostrar('prestamo')">
+                    <img src="img/solicitar credito.jpg" class="btn-icon">
+                    <h3>Solicitud de Préstamo</h3>
+                    <p>
+                        Realizar una solicitud de préstamo de manera rápida y fácil.
+                    </p>
+                </div>
             
-            <div class="btn-card" onclick="mostrar('prestamo')">
-                <img src="img/solicitar credito.jpg" class="btn-icon">
-                <h3>Solicitud de Préstamo</h3>
-                <p>
-                    Realizar una solicitud de préstamo de manera rápida y fácil.
-                </p>
+                <div class="btn-card" onclick="mostrar('consulta')">
+                    <img src="img/consulta credito.jpg" class="btn-icon">
+                    <h3>Consulta de Crédito</h3>
+                    <p>
+                        Consulta tu historial de credito y proporciona tus datos de manera segura.
+                    </p>
+                </div>
+            
+                <div class="btn-card" onclick="mostrar('actualizar')">
+                    <img src="img/actualizar datos.png" class="btn-icon">
+                    <h3>Actualizar Datos</h3>
+                    <p>
+                        Actualiza tus datos personales de forma sencilla.
+                    </p>
+                </div>
             </div>
-        
-            <div class="btn-card" onclick="mostrar('consulta')">
-                <img src="img/consulta credito.jpg" class="btn-icon">
-                <h3>Consulta de Crédito</h3>
-                <p>
-                    Consulta tu historial de credito y proporciona tus datos de manera segura.
-                </p>
-            </div>
-        
-            <div class="btn-card" onclick="mostrar('actualizar')">
-                <img src="img/actualizar datos.png" class="btn-icon">
-                <h3>Actualizar Datos</h3>
-                <p>
-                    Actualiza tus datos personales de forma sencilla.
-                </p>
-            </div>
-        
-        </div>
+        </section>
 
+        
         <div id="prestamo" class="section oculto">
             <h2>Solicitud de Préstamo</h2>
             <label>Monto:</label>
@@ -85,13 +88,15 @@
             <button onclick="actualizarDatos()">Actualizar</button>
             <p id="respActualizar"></p>
         </div>
-
-        <footer class="footer">
-            <p class="footer-text">
-                Facebook • Instagram • Whatsapp <br>
-                Todos los derechos reservados
-            </p>
-        </footer>
+        
+        <section id="contacto">
+            <footer class="footer">
+                <p class="footer-text">
+                    Facebook • Instagram • Whatsapp <br>
+                    Todos los derechos reservados
+                </p>
+            </footer>
+        </section>
     </div>
 
     <script src="script.js"></script>
