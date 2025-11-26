@@ -65,14 +65,35 @@
         
         <h2>Selecciona tu perfil</h2>
 
-        <button class="user-btn" onclick="location.href='cliente.html'">
+        <button class="user-btn" onclick="loginCliente()">
             Ingresar como Cliente
         </button>
 
-        <button class="user-btn" onclick="location.href='admin.html'">
+        <button class="user-btn" onclick="loginAdmin()">
             Ingresar como Administrador
         </button>
     </div>
+
+
+<script>
+    function loginCliente() {
+        let pass = prompt("Ingrese la contraseña de cliente:");
+        if (pass === "cliente123") {
+            location.href = 'cliente.html';
+        } else {
+            alert("Contraseña incorrecta");
+        }
+    }
+
+    function loginAdmin() {
+        let pass = prompt("Ingrese la contraseña de administrador:");
+        if (pass === "admin123") {
+            location.href = 'admin.html';
+        } else {
+            alert("Contraseña incorrecta");
+        }
+    }
+</script>
 
 </body>
 </html>
